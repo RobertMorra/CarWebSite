@@ -1,0 +1,128 @@
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Add some spacing to lists */
+ul, ol {
+    margin-bottom: 20px;
+}
+body {
+    font-family: 'New Times Roman', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #100000f9;
+    background-color: #ffffff;
+}
+
+/* Navigation Bar Styles */
+.navbar-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+}
+.navbar {
+    background-color: rgba(175, 175, 175, 0.609);
+    padding: 0px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 27px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(14, 1, 1);
+    font-weight: bold;
+    font-size: 27px;
+    transition: background-color 0.5s;
+}
+
+.navbar a:hover {
+    background-color: #77716e;
+}
+
+/* Add some padding and center the content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings */
+h1, h2, h3 {
+    color: #130101;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+    
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
+.image-container {
+    text-align: center;
+}
+
+img {
+    display: block; /* Make the image a block element */
+    max-width: 75%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally within its container */
+}
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+} 
+  
+
+.center-container {
+    
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Adjust height as needed */
+  }
+  .order-now-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    background-color: #4CAF50; /* Background color */
+    border: 3px solid #000000; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+  
+    /* Additional styling for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .order-now-button:hover {
+    background-color: #45a049; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }

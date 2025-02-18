@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set, viewport, and description -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Porsche">
+
+    <!-- Favicon and stylesheets -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="productpage-styles.css">
+
+    <!-- Page title -->
+    <title>Porsche 911 Turbo S</title>
+</head>
+
+<body>
+    <!-- Page header -->
+    <header>
+        <h1>Porsche</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="productpage.html">911 Turbo S</a></li>
+            <li><a href="contactpage.html">Contact Us</a></li>
+            <li><a href="aboutpage.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main class="product-page">
+        <section class="product-info">
+            <!-- Product name -->
+            <h2 id="productName">1989 911 Turbo S</h2>
+
+            <!-- Image slideshow container -->
+            <div id="imageSlideshow" class="slideshow-container">
+                <!-- Images for the slideshow with alt text -->
+                <img src="images/carpixel.net-1989-porsche-911-turbo-limited-edition-50000-wide.jpg" alt="First Image" class="slide">
+                <img src="images/1989-porsche-911-turbo-4-thumb-960xauto-73548.jpg" alt="Second Image" class="slide">
+                <img src="images/911-turbo-S-black.jpeg" alt="Third Image" class="slide">
+            </div>
+            <br>
+
+            <!-- Product description -->
+            <h3>There Is No Substitute</h3>
+            <p>
+                Experience the thrill of the iconic Porsche 911 Turbo S. With its powerful engine,
+                cutting-edge technology, and sleek design, the Turbo S is the epitome of performance
+                and luxury. Don't miss the opportunity to own a legend. Launched as a limited edition 
+                to commemorate the 911's success in motorsports, the 1989 Porsche 911 Turbo S marked a
+                milestone in the evolution of high-performance sports cars. Its unique design elements
+                and powerful performance contributed to its legendary status, making it a standout model
+                in Porsche's illustrious history.
+            </p>
+
+            <h4>Specifications</h4>
+<ul>
+    <li>Engine: 3.3L Turbocharged Flat-6</li>
+    <li>Horsepower: 330 hp</li>
+    <li>Torque: 319 lb-ft</li>
+    <li>Transmission: 5-Speed Manual</li>
+    <li>0-60 mph Acceleration: 4.6 seconds</li>
+    <li>Top Speed: 180 mph</li>
+    <li>Braking Distance (60-0 mph): 120 feet</li>
+    <li>Weight: 3,000 lbs</li>
+    <li>Wheelbase: 89.4 inches</li>
+    <li>Length: 168.9 inches</li>
+    <li>Width: 65.0 inches</li>
+    <li>Height: 52.0 inches</li>
+    <li>Front Suspension: Independent MacPherson Struts</li>
+    <li>Rear Suspension: Independent Multi-Link</li>
+    <li>Steering: Rack-and-Pinion</li>
+    <li>Fuel Economy: 15 mpg (city) / 21 mpg (highway)</li>
+</ul>
+
+<h5> LIMITED QUANTITIES AVAILABLE! </h5>
+          
+            <br>
+
+            <!-- Order Now button -->
+            <div class="center-container">
+                <div class="order-now-container">
+                    <a href="contactpage.html" class="order-now-button">Order Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript scripts at the end of the body for better performance -->
+    <script src="global.js"></script>
+    <script>
+        // JavaScript code for image slideshow
+        let currentImageIndex = 0;
+        const images = [
+            "images/carpixel.net-1989-porsche-911-turbo-limited-edition-50000-wide.jpg",
+            "images/1989-porsche-911-turbo-4-thumb-960xauto-73548.jpg",
+            "images/911 turbo S black.jpeg"
+        ];
+
+        function showNextImage() {
+            // Code to cycle through images and display the current one
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            const slideshowContainer = document.getElementById('imageSlideshow');
+            const slides = slideshowContainer.getElementsByClassName('slide');
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the current slide
+            slides[currentImageIndex].style.display = "block";
+        }
+
+        // Call showNextImage every 5 seconds (for example)
+        setInterval(showNextImage, 5000);
+    </script>
+    <!-- Page footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Porsche. All rights reserved.</p>
+        </div>
+    </footer>
+</html>

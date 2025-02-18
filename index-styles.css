@@ -1,0 +1,164 @@
+html, body, h1, h2, h3, p, ul, ol, li, figure, figcaption, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'New Times Roman', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #100000f9;
+    background-color: #ffffff;
+}
+
+/* Navigation Bar Styles */
+.navbar-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+}
+.navbar {
+    background-color: rgba(175, 175, 175, 0.609);
+    padding: 0px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 27px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(14, 1, 1);
+    font-weight: bold;
+    font-size: 27px;
+    transition: background-color 0.5s;
+}
+
+.navbar a:hover {
+    background-color: #77716e;
+}
+
+/* Add some padding and center the content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings */
+h1, h2, h3 {
+    color: #130101;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    
+    
+}
+
+h2 {
+    font-size: 30px;
+    /* Move text up by reducing bottom padding */
+
+    margin-top: -400px; /* Adjust the value as needed */
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Style links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Add some spacing to lists */
+ul, ol {
+    margin-bottom: 20px;
+}
+
+/* Style form elements */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Style buttons */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #d40404;
+}
+
+/* Flexbox Styles */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full screen height */
+    /* Additional styling if needed */
+    border: 2px solid #333;
+    padding: 20px;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .video-container {
+    position: center;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width if desired */
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #3498db; /* Set background color */
+    color: #ffffff; /* Set  text color */
+    border-radius: 10px; /* Set border radius */
+    transition: background-color 0.5s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9; /* Set background color on hover */
+}

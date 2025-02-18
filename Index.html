@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Promotional website for Porsche vehicles. Explore our models, technology, and innovation.">
+    <meta name="keywords" content="Porsche, luxury cars, sports cars, performance vehicles">
+
+    <!-- Favicon and Stylesheet references -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index-Styles.css">
+
+    <!-- External JavaScript with defer attribute -->
+    <script src="global.js" defer></script>
+
+    <!-- Document title -->
+    <title>Porsche</title>
+</head>
+
+<body>
+    <!-- Call the JavaScript functions to create and add header and footer -->
+    <script>
+        // JavaScript functions for creating header and footer
+        function createHeader() {
+            // Check if the header already exists
+            if (!document.querySelector('header')) {
+                const header = document.createElement('header');
+                header.innerHTML = '<h1>Porsche</h1>';
+                document.body.insertBefore(header, document.body.firstChild);
+            }
+        }
+
+        function createFooter() {
+            // Check if the footer already exists
+            if (!document.querySelector('footer')) {
+                const footer = document.createElement('footer');
+                footer.innerHTML = '<p>&copy; 2023 Porsche. All rights reserved.</p>';
+                document.body.appendChild(footer);
+            }
+        }
+
+        // Ensure the DOM is fully loaded before calling the functions
+        document.addEventListener('DOMContentLoaded', function () {
+            createHeader();
+            createFooter();
+        });
+    </script>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="productpage.html">911 Turbo S</a></li>
+                <li><a href="contactpage.html">Contact Us</a></li>
+                <li><a href="aboutpage.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content sections -->
+    <main>
+        <!-- Video section -->
+        <section class="video-section">
+            <h1>The Legend Lives On</h1>
+            <!-- Article for grouping content -->
+            <article>
+              <div class="container">
+                    <!-- Video container -->
+                    <div class="video-container">
+                        <!-- Video with alt text for accessibility -->
+                        <video width="640" height="360" controls alt="Porsche promotional video">
+                            <source src="videos/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Promotion section -->
+       
+            <h2>Experience the Thrill of Porsche</h2>
+            <p>Discover the unmatched performance and luxury of Porsche. 
+                Our vehicles are engineered for excellence, providing a driving experience like no other.
+                Take a journey with us, and elevate your passion for the road.</p>
+            <!-- Call-to-action button -->
+            <a href="productpage.html" class="cta-button">Explore Models</a>
+        
+
+        <!-- Engaging content section -->
+        
+            <h3>Celebrating Innovation</h3>
+            <p>At Porsche, innovation is our tradition. Explore the cutting-edge technology and
+                 design that define our vehicles. From iconic classics to the latest models, 
+                 each Porsche represents a legacy of performance and innovation.</p>
+            <!-- Call-to-action button -->
+            <a href="aboutpage.html" class="cta-button">Learn More About Us</a>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Porsche. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
